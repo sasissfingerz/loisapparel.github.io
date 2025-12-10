@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Shop – Lois Apparel Ready-to-Wear</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse ready-to-wear and signature pieces from Lois Apparel." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container nav-inner">
+    <div class="logo">LOIS <span>APPAREL</span></div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="services.html">Services</a>
+      <a href="shop.html" class="active">Shop</a>
+      <a href="fashion-institute.html">Institute</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="https://wa.me/2348166868648" class="btn-nav" target="_blank">Order Now</a>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-kicker">Shop</p>
+        <h1 class="section-title">Signature pieces made with love and intention.</h1>
+        <p class="section-subtitle">
+          Add your favourite pieces to cart, then send your order via WhatsApp.
+          Prices and final details will be confirmed with you directly.
+        </p>
+      </div>
+
+      <div class="product-grid">
+
+        <!-- PRODUCT 1 -->
+        <div class="product-card">
+          <img src="img/la-wonder-white-kaftan.jpg" alt="Wonder Dress white kaftan" />
+          <div class="product-body">
+            <div class="product-name">Wonder Dress – White Kaftan</div>
+            <div class="product-tagline">Light, elegant & perfect for all body types.</div>
+            <div class="product-price">Price: on request</div>
+            <div class="product-cta" style="margin-top:8px;">
+              <button type="button" class="btn btn-primary product-add"
+                data-product="Wonder Dress – White Kaftan">
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRODUCT 2 -->
+        <div class="product-card">
+          <img src="img/la-blue-flow-gown.jpg" alt="Flowing blue gown" />
+          <div class="product-body">
+            <div class="product-name">Wonder Dress – Flow Gown</div>
+            <div class="product-tagline">Graceful movement, soft fabric, standout design.</div>
+            <div class="product-price">Price: on request</div>
+            <div class="product-cta" style="margin-top:8px;">
+              <button type="button" class="btn btn-primary product-add"
+                data-product="Wonder Dress – Flow Gown">
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRODUCT 3 -->
+        <div class="product-card">
+          <img src="img/la-purple-trousers.jpg" alt="Purple Ankara trousers" />
+          <div class="product-body">
+            <div class="product-name">Wonder Bottoms – Ankara Pants</div>
+            <div class="product-tagline">Bold prints, flattering cut, wearable anywhere.</div>
+            <div class="product-price">Price: on request</div>
+            <div class="product-cta" style="margin-top:8px;">
+              <button type="button" class="btn btn-primary product-add"
+                data-product="Wonder Bottoms – Ankara Pants">
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRODUCT 4 -->
+        <div class="product-card">
+          <img src="img/la-ankara-peplum-green.jpg" alt="Green Ankara peplum top" />
+          <div class="product-body">
+            <div class="product-name">Corporate Peplum – Green Edition</div>
+            <div class="product-tagline">Structured look designed for elegance.</div>
+            <div class="product-price">Price: on request</div>
+            <div class="product-cta" style="margin-top:8px;">
+              <button type="button" class="btn btn-primary product-add"
+                data-product="Corporate Peplum – Green Edition">
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRODUCT 5 -->
+        <div class="product-card">
+          <img src="img/la-ankara-peplum-multi.jpg" alt="Multi Ankara peplum top" />
+          <div class="product-body">
+            <div class="product-name">Corporate Peplum – Multi Edition</div>
+            <div class="product-tagline">Bright tones, neat finishing, timeless shape.</div>
+            <div class="product-price">Price: on request</div>
+            <div class="product-cta" style="margin-top:8px;">
+              <button type="button" class="btn btn-primary product-add"
+                data-product="Corporate Peplum – Multi Edition">
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRODUCT 6 -->
+        <div class="product-card">
+          <img src="img/la-joggers-grey.jpg" alt="Grey Lois joggers" />
+          <div class="product-body">
+            <div class="product-name">Lois Joggers (Branded)</div>
+            <div class="product-tagline">Soft fabric, modern fit, LA signature embroidery.</div>
+            <div class="product-price">Price: on request</div>
+            <div class="product-cta" style="margin-top:8px;">
+              <button type="button" class="btn btn-primary product-add"
+                data-product="Lois Joggers – Grey">
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CART SUMMARY -->
+      <div class="cart-summary">
+        <h3>Your cart</h3>
+        <p id="cart-empty">No items yet. Tap “Add to cart” on any piece you like.</p>
+        <ul id="cart-items"></ul>
+        <button type="button" class="btn btn-primary" onclick="checkoutWhatsApp()">
+          Send order via WhatsApp
+        </button>
+      </div>
+
+      <p style="margin-top:18px; font-size:0.88rem; color:var(--muted);">
+        Note: This is a simple cart to help you list what you like. Final prices, fabric options
+        and delivery will be discussed with Lois Apparel on WhatsApp.
+      </p>
+
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>© 2025 Lois Apparel by Bukola Olajubu. All rights reserved.</div>
+    <div class="footer-links">
+      <a href="https://instagram.com/loisolajubu" target="_blank">@loisolajubu</a>
+      <a href="https://wa.me/2348166868648" target="_blank">WhatsApp</a>
+      <a href="#">Back to top</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Simple cart (stored in browser only)
+  let cart = [];
+
+  function loadCart() {
+    try {
+      const saved = localStorage.getItem('loisCart');
+      cart = saved ? JSON.parse(saved) : [];
+    } catch (e) {
+      cart = [];
+    }
+  }
+
+  function saveCart() {
+    localStorage.setItem('loisCart', JSON.stringify(cart));
+  }
+
+  function renderCart() {
+    const list = document.getElementById('cart-items');
+    const empty = document.getElementById('cart-empty');
+    list.innerHTML = '';
+
+    if (!cart.length) {
+      empty.style.display = 'block';
+      return;
+    }
+
+    empty.style.display = 'none';
+
+    cart.forEach(function (item, index) {
+      const li = document.createElement('li');
+      li.textContent = item.name + ' × ' + item.qty;
+      list.appendChild(li);
+    });
+  }
+
+  function addToCart(name) {
+    const existing = cart.find(function (item) { return item.name === name; });
+    if (existing) {
+      existing.qty += 1;
+    } else {
+      cart.push({ name: name, qty: 1 });
+    }
+    saveCart();
+    renderCart();
+  }
+
+  function checkoutWhatsApp() {
+    if (!cart.length) {
+      alert('Your cart is empty.');
+      return;
+    }
+    let message = 'Hello Lois Apparel, here is my order:%0A';
+    cart.forEach(function (item) {
+      message += '- ' + item.name + ' x' + item.qty + '%0A';
+    });
+    message += '%0APlease share prices, colour options and next steps.';
+    const url = 'https://wa.me/2348166868648?text=' + message;
+    window.open(url, '_blank');
+  }
+
+  // Setup
+  loadCart();
+  renderCart();
+
+  document.querySelectorAll('.product-add').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      const name = btn.getAttribute('data-product');
+      addToCart(name);
+    });
+  });
+</script>
+
+</body>
+</html>
