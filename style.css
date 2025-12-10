@@ -7,6 +7,12 @@
   --accent: #d4af37; /* gold */
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -209,7 +215,6 @@ ul {
   width: 100%;
   height: 360px;
   object-fit: cover;
-  display: block;
 }
 
 .hero-tag {
@@ -286,7 +291,7 @@ ul {
   display: block;
 }
 
-/* Cards */
+/* Card Grids */
 
 .card-grid-3 {
   display: grid;
@@ -527,7 +532,6 @@ ul {
 @media (max-width: 900px) {
   .hero-inner,
   .about-grid,
-  .gallery-grid,
   .service-list,
   .product-grid,
   .contact-grid {
@@ -542,9 +546,9 @@ ul {
     height: 320px;
   }
 
-  .card-grid-3,
   .gallery-grid,
-  .product-grid {
+  .product-grid,
+  .card-grid-3 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -570,9 +574,9 @@ ul {
     gap: 10px;
   }
 
-  .card-grid-3,
   .gallery-grid,
-  .product-grid {
+  .product-grid,
+  .card-grid-3 {
     grid-template-columns: 1fr;
   }
 
@@ -580,8 +584,9 @@ ul {
     flex-direction: column;
     align-items: flex-start;
   }
+}
 
-  /* New arrivals slider */
+/* New Arrivals Slider */
 
 .new-arrivals {
   padding: 60px 0;
@@ -610,7 +615,6 @@ ul {
   min-width: 100%;
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
-  gap: 0;
 }
 
 .arrival-card img {
@@ -651,7 +655,7 @@ ul {
   cursor: pointer;
 }
 
-/* Featured product */
+/* Featured Product */
 
 .featured-product {
   margin-top: 26px;
@@ -667,7 +671,7 @@ ul {
   object-fit: cover;
 }
 
-/* Cart summary */
+/* Cart Summary */
 
 .cart-summary {
   margin-top: 30px;
@@ -695,6 +699,4 @@ ul {
 #cart-empty {
   color: var(--muted);
   font-size: 0.88rem;
-}
-
 }
